@@ -24,7 +24,6 @@ namespace shAlgo{
 
         //printing States of Algo at different Time intervals
         void initialState();
-        void currentState();
         void finalState();
 
         public:

@@ -1,7 +1,8 @@
 #include <iostream>
-//#include "FCFShpp"
+#include "FCFS.hpp"
 #include "SJF.hpp"
 #include "PRIOR.hpp"
+#include "RROBIN.hpp"
 
 int main(){
     /*
@@ -56,6 +57,7 @@ int main(){
     scheduler.run();
     */
 
+   /*
    //preemptive priority Scheduler
    shAlgo::PRIOR scheduler(5, true);
 
@@ -66,6 +68,18 @@ int main(){
     scheduler.insertProcess(new shAlgo::Process(5, "E", 5, 2, 3));
 
     scheduler.run();
+    */
+
+    //Round Robin with FCFS ReadyQ
+    shAlgo::ROBIN scheduler(5, 2);
+
+    scheduler.insertProcess(new shAlgo::Process(1, "A", 0, 3, 3));
+    scheduler.insertProcess(new shAlgo::Process(2, "B", 1, 3, 2));
+    scheduler.insertProcess(new shAlgo::Process(3, "C", 2, 1, 2));
+    scheduler.insertProcess(new shAlgo::Process(4, "D", 3, 2, 1));
+    scheduler.insertProcess(new shAlgo::Process(5, "E", 5, 3, 3));
+
+    scheduler.run();    
     
     return 0;
 }
