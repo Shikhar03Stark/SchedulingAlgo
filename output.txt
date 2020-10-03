@@ -1,0 +1,39 @@
+               T=0                 A                 B                 C                 D                 E
+               PID                 1                 2                 3                 4                 5
+            ArTime                 0                 1                 2                 3                 5
+            BrTime                 3                 2                 2                 1                 2
+
+                T=0
+              PID:1 pushed in Ready Queue
+       Executed |      A
+
+              PID:2 pushed in Ready Queue
+
+                T=2
+              PID:3 pushed in Ready Queue
+       Executed |      A     B     C
+
+              PID:4 pushed in Ready Queue
+
+                T=4
+       Executed |      B     C     D
+
+              PID:5 pushed in Ready Queue
+
+                T=6
+       Executed |      C     D     E
+
+
+                T=8
+       Executed |      E
+
+
+                T=10
+       Executed | 
+
+                T=10                 A                 B                 C                 D                 E
+               PID                 1                 2                 3                 4                 5
+      Arrival Time                 0                 1                 2                 3                 5
+   Completion Time                 3                 5                 7                 8                10
+  Turn Around Time                 3                 4                 5                 5                 5
+       Wating Time                 0                 2                 3                 4                 3
