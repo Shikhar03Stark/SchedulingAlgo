@@ -20,16 +20,11 @@
 <td> PRIOR.hpp </td>
 </tr>
 <tr>
-<td> Q.hpp </td>
-<td> Q.hpp </td>
-<td> shPQ.hpp </td>
-<td> shPQ.hpp </td>
+<td colspan="2" align="center"> Q.hpp </td>
+<td colspan="2" align="center"> shPQ.hpp </td>
 </tr>
 <tr>
-<td> Process.hpp </td>
-<td> Process.hpp </td>
-<td> Process.hpp </td>
-<td> Process.hpp </td>
+<td colspan="4" align="center"> Process.hpp </td>
 </tr>
 </table>
 
