@@ -5,6 +5,7 @@
 #include "RROBIN.hpp"
 
 int main(){
+    
     /*
     //non-preemptive FCFS Scheduler
     shAlgo::FCFS scheduler(5);
@@ -45,8 +46,8 @@ int main(){
     */
 
    /*
-   //non-preemptive priority Scheduler
-   shAlgo::PRIOR scheduler(5);
+	//non-preemptive priority Scheduler
+	shAlgo::PRIOR scheduler(5);
 
     scheduler.insertProcess(new shAlgo::Process(1, "A", 0, 3, 1));
     scheduler.insertProcess(new shAlgo::Process(2, "B", 1, 2, 2));
@@ -68,8 +69,9 @@ int main(){
     scheduler.insertProcess(new shAlgo::Process(5, "E", 5, 2, 3));
 
     scheduler.run();
-    */
+   */
 
+//	/*
     //Round Robin with FCFS ReadyQ
     shAlgo::ROBIN scheduler(5, 2);
 
@@ -80,6 +82,6 @@ int main(){
     scheduler.insertProcess(new shAlgo::Process(5, "E", 5, 3, 3));
 
     scheduler.run();    
-    
+//    */
     return 0;
 }
